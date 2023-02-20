@@ -8,7 +8,7 @@ library(socviz)
 ## 3.3 Mappings Link Data to Things You See
 
 # Reminder of what gapminder looks like
-gapminder
+gapminder <- gapminder
 
 p <- # Defining the landscape of our graph 
 p <- ggplot(data = gapminder)
