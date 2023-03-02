@@ -77,7 +77,7 @@ p + geom_bar(mapping = aes(y = ..prop..))
 
 # if we specify group = 1, tells geom_bar() to use total number of observations instead 
 
-p + geom_bar(mapping = aes(y = ..prop.., group = 1)) 
+p + geom_bar(mapping = aes(y = ..prop.., group = 1))
 
 # table() will list the frequencies for all values of a factor
 
