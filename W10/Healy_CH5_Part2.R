@@ -50,7 +50,7 @@ p + geom_point()  + geom_text_repel()
 
 # A look at date in elections_historic
 View(elections_historic)
-
+elections_historic <- elections_historic
 elections_historic %>% select(2:7)       
 
 
