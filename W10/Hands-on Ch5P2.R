@@ -2,6 +2,7 @@
 # Part 1
 # Question: By using *vjust* argument in geom_text() function, label all points in the vertical direction above or below each point. (two plots should be drawn, below and above each point by changing the value of *vjust*)
 # ========================== Answer part a =====================
+<<<<<<< HEAD
 rm(list=ls(all=TRUE))
 cat("\014")
 
@@ -25,10 +26,17 @@ p + geom_point()  + geom_text_repel(mapping = aes(label = country), vjust = -.4,
 
 #Plot 2 --> All labels above
 p + geom_point()  + geom_text_repel(mapping = aes(label = country), vjust = 1, hjust = 0)
+=======
+
+
+
+
+>>>>>>> main
 
 # Part 2)
 # For the summarized *gss_sm* dataset grouped by only *padeg*, laebl the mean of children and siblings based on the paternal degree.
 # ========================== Answer part b =====================
+<<<<<<< HEAD
 gss_sm
 padeg.df <- gss_sm %>% group_by(padeg) %>%
   summarize(children_mean= mean(childs, na.rm = TRUE),
@@ -51,11 +59,25 @@ p + geom_point() +
   geom_text_repel(data = subset(organdata, ind),
                   mapping = aes(label = ccode)) +
   guides(color = "none")   # Remove some guides
+=======
+
+
+
+
+
+
+## Part 3) 
+# Question: For the by-country dataframe, choose observations from the united state of america (ccdoe=USA) after 1998, and then highlight them in the plot of road fatalities average against the average percentage of donors. 
+# ========================== Answer part c =====================
+
+
+>>>>>>> main
 
 
 ## Part 4)
 # Using gapminder dataset, specify the outliers in the plot of gdpPercap over lifeExp. 
 # ========================== Answer part d =====================
+<<<<<<< HEAD
 library(gapminder)
 
 p <- ggplot(data = gapminder,
@@ -65,3 +87,6 @@ p + geom_point() +
            ymin = 55, ymax = 70, fill = "red", alpha = 0.2) + 
   annotate(geom = "text", x = 60000, y = 72,
            label = "A surprisingly high recovery rate.", hjust = 0)  
+=======
+
+>>>>>>> main
